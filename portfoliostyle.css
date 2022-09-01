@@ -32,7 +32,7 @@ nav {
     padding: var(--spacing-3) 0;
 }
 
-li {
+nav li {
     display: inline;
 }
 
