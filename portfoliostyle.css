@@ -32,6 +32,7 @@ nav {
     align-items: center;
     padding: var(--spacing-3) 0;
     flex-direction: row;
+    margin: 1px;
 }
 
 .navigation-item {
