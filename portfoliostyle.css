@@ -2,10 +2,7 @@
 
 
 html,
-body {
-    height: 100%;
-    color: var(--font-color);
-}
+body {}
 
 h2 {
     font-family: "Proza Libre", sans-serif;
@@ -44,8 +41,4 @@ nav {
     align-items: center;
     margin: 0;
     margin-left: auto;
-}
-
-.navigation-item {
-    margin: var(--spacing-1);
 }
