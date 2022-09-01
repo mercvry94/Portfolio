@@ -26,15 +26,16 @@ body {
     flex-direction: column;
 }
 
+ul {
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
 nav {
     display: flex;
     align-items: center;
     padding: var(--spacing-3) 0;
     flex-direction: row;
-}
-
-nav li {
-    display: inline;
 }
 
 .navigation-item {
