@@ -32,6 +32,10 @@ nav {
     padding: var(--spacing-3) 0;
 }
 
+li {
+    display: inline;
+}
+
 .navigation-item {
     display: flex;
     list-style-type: none;
