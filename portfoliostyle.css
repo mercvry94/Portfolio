@@ -28,6 +28,7 @@ nav ul {
     background-color: #f3f3f3;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
 }
 
