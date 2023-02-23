@@ -1,20 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
 
+* {
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+body.show-nav {
+    /* Width of the Nav */
+    transform: translateX(200px);
+}
+
+.toogle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
 header {
     color: blue;
-    background-color: aliceblue;
+    font-size: 130%;
+    position: relative;
+    padding: 40px 15px;
+    text-align: center;
 }
 
 h2 {
     font-family: "Proza Libre", sans-serif;
     margin: 0;
-    margin-bottom: var(--spacing-2);
 }
 
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
-    padding: 0 var(--spacing-3);
     max-width: 900px;
     margin: 0 auto;
     display: flex;
@@ -22,7 +56,6 @@ body {
 }
 
 nav ul {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -30,17 +63,27 @@ nav ul {
 
 nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
     border-color: blue;
     padding: 5px;
-    flex-direction: row;
-    margin: 5px;
+    margin: 2px;
+    background-color: var(--primary-color);
+    border-right: 2px solid rgba(200, 200, 200, 0.1);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(-100%)
 }
+
 
 .navigation-item {
     list-style-type: none;
-    padding: 0;
+    padding: 5px;
     align-items: center;
-    margin: 0;
-    margin-left: auto;
+
 }

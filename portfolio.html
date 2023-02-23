@@ -6,17 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercvry's World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha512-0S+nbAYis87iX26mmj/+fWt1MmaKCv80H+Mbo+Ne7ES4I6rxswpfnC6PxmLiw33Ywj2ghbtTw0FkLbMWqh4F7Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./portfoliostyle.css" />
 </head>
 
 <body>
     <header>
+        <button id="toogle" class="toogle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
         <h1>Planet Mercvry</h1>
     </header>
     <nav>
+        <div class="logo">
+
+        </div>
         <ul>
             <li class="navigation-item"><a href="#bio">Bio</a></li>
-            <li class="navigation-item"><a href="#music">Music</a></li>
             <li class="navigation-item"><a href="#projects">Projects</a></li>
             <li class="navigation-item"><a href="./contact.html">Contact</a></li>
         </ul>
@@ -27,34 +35,7 @@
             <p>I was born in Jos, Nigeria. Under the moniker Mercvry 94, I produce music, essays, poetry and the
                 ocassional trilogy of science fiction novels. I am currently based in New York City </p>
         </section>
-        <section id="music">
-            <h2>Music</h2>
-            <ul>
-                <li><a href="https://soundcloud.com/ashtronomics-1/sets/claustrophobic"
-                        target="_blank">[claustrophobic]</a></li>
-                <li><a href="https://soundcloud.com/ashtronomics-1/sets/post_claustrophobia" target="_blank">P.O.S.T.
-                        C.L.A.U.S.T.R.O.P.H.O.B.I.A.</a></li>
-                <li><a href="https://soundcloud.com/ashtronomics-1/sets/fruit-fruition" target="_blank">fruit &
-                        fruition</a></li>
-                <li><a href="https://open.spotify.com/album/1rxPHG8REnXrh8FXpLnj2v?si=Kxn_cPTvRrW7B1ocRPziHw"
-                        target="_blank">MINVTIAE</a></li>
-                <li><a href="https://open.spotify.com/album/2gI710QpAmLtESdrTHc8RE?si=LNOhFzoPRD-2OuRU3xaG-w"
-                        target="_blank">MINVTIAE
-                        2</a></li>
-                <li><a href="https://open.spotify.com/album/4r2N5sgUi8HglIod0VssrD?si=-oNrMxBdRDi8r-HRZw1lQw"
-                        target="_blank">Qvarantine
-                        Poems</a></li>
-                <li><a href="https://open.spotify.com/album/2jHkdfk34p4pMLim0s1O56?si=ADVXQmLQSTeBIJPxA2QiHA"
-                        target="_blank">MINVTIAE
-                        3</a></li>
-            </ul>
-            <iframe style="border-radius:5px"
-                src="https://open.spotify.com/embed/album/1rxPHG8REnXrh8FXpLnj2v?utm_source=generator" width="100%"
-                height="300" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"></iframe>
 
-        </section>
         <section id="projects">
             <h2>Projects</h2>
             <div></div>
@@ -62,11 +43,10 @@
     </main>
 
     <script>
-        const navItem = document.getElementsByClassName("navigation-item");
-        navItem.addEventListener('click', function onClick(event) {
-            document.body.style.backgroundColor = 'orange';
-        });
-
+        const toogle = document.getElementById('toogle');
+        toogle.addEventListener('click', () =>
+            document.body.classList.toggle('show-nav')
+        );
     </script>
 
 
