@@ -5,54 +5,58 @@
 
 }
 
-
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Proza Libre", sans-serif;
     margin: 0;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     transition: transform 0.3s ease;
 }
 
 body.show-nav {
-    /* Width of the Nav */
-    transform: translateX(200px);
+    transform: translateX(150px);
 }
 
 .toogle {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 0;
+}
+
+nav .logo img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    justify-content: center;
 }
 
 nav ul {
-    padding: 0;
+    padding: 10px;
     list-style-type: none;
-    margin: 0;
+    margin: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 header {
     color: blue;
     font-size: 130%;
     position: relative;
-    padding: 40px 15px;
+    padding: 30px 15px;
     text-align: center;
 }
 
 h2 {
     font-family: "Proza Libre", sans-serif;
     margin: 0;
-}
-
-body {
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
 }
 
 nav ul {
@@ -63,10 +67,10 @@ nav ul {
 
 nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     border-color: blue;
-    padding: 5px;
+    padding: 20px;
     margin: 2px;
     background-color: var(--primary-color);
     border-right: 2px solid rgba(200, 200, 200, 0.1);
@@ -74,16 +78,47 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px;
+    width: 150px;
     height: 100vh;
     z-index: 100;
     transform: translateX(-100%)
 }
 
+main p {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px;
+}
+
+main h2 {
+    margin: 5px;
+    padding: 5px;
+}
 
 .navigation-item {
     list-style-type: none;
     padding: 5px;
     align-items: center;
 
+}
+
+#projects h2 {
+    color: blue;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.projects-container img {
+    width: 200px;
+    height: 200px;
+}
+
+.projects-container h3 {
+    text-align: center;
 }
