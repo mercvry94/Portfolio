@@ -6,13 +6,20 @@
 }
 
 body {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 0, 0.5),
+        rgba(0, 0, 255, 0.5)
+      ), url(./images/profile.jpg) ;
     font-family: "Proza Libre", sans-serif;
     margin: 0;
     max-width: 900px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     transition: transform 0.3s ease;
+    
 }
 
 body.show-nav {
@@ -89,6 +96,7 @@ main p {
     font-size: 16px;
     margin: 5px;
     padding: 5px;
+    line-height: 40px;
 }
 
 main h2 {
@@ -117,8 +125,20 @@ main h2 {
 .projects-container img {
     width: 200px;
     height: 200px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .projects-container h3 {
     text-align: center;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    align-self: auto;
+    justify-content: center;
+}
+#contacts input{
+    padding: 5px;
 }
